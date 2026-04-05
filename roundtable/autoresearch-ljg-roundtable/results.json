@@ -1,0 +1,41 @@
+{
+  "skill_name": "ljg-roundtable",
+  "status": "complete",
+  "current_experiment": 2,
+  "baseline_score": 96.2,
+  "best_score": 100.0,
+  "experiments": [
+    {
+      "id": 0,
+      "score": 25,
+      "max_score": 26,
+      "pass_rate": 96.2,
+      "status": "baseline",
+      "description": "original skill — no changes (EVAL 5 only tested in run 3; run 5 EVAL 4 failed: 简言之 30字超限)"
+    },
+    {
+      "id": 1,
+      "score": 5,
+      "max_score": 5,
+      "pass_rate": 100.0,
+      "status": "keep",
+      "description": "添加「简言之≤25字」规则 + 禁止奉承用户规则（本轮无用户参与，EVAL 5=N/A，EVAL 4全部通过）"
+    },
+    {
+      "id": 2,
+      "score": 6,
+      "max_score": 6,
+      "pass_rate": 100.0,
+      "status": "keep",
+      "description": "用户参与场景测试：奉承禁止规则生效，所有参会者做出实质性回应，无夸张褒奖"
+    }
+  ],
+  "eval_breakdown": [
+    {"name": "E1: 人物张力网络", "pass_count": 8, "total": 8},
+    {"name": "E2: 发言有锋芒/引用真实观点", "pass_count": 8, "total": 8},
+    {"name": "E3: ASCII图揭示结构", "pass_count": 8, "total": 8},
+    {"name": "E4: 简言之真正压缩≤25字", "pass_count": 6, "total": 6},
+    {"name": "E5: 无奉承用户", "pass_count": 2, "total": 2},
+    {"name": "E6: 下一层问题更深", "pass_count": 8, "total": 8}
+  ]
+}
